@@ -3,23 +3,188 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre de la page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CV Portfolio</title>
+    <style>
+*{
+    box-sizing: border-box;
+    margin: 10;
+    padding: 10;
+}
+body{
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+}
+
+header{
+     background: #1e3a5f;
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+}
+nav {
+            background: #1e3a5f;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+nav a {
+  font-size: 15px;
+  font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 0PX;
+    margin-left: 50px;
+    border-radius: 8px;
+    background-color: #ff9900;
+        }
+        nav a:hover { text-decoration: underline; 
+        }
+
+ ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 8px 12px;
+            margin-bottom: 6px;
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            border-radius: 4px;
+        }
+ footer {
+            background: #1e3a5f;
+            color: #93c5fd;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+.cvimg img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border: 3px solid #60a5fa;
+}
+
+section{
+    margin-top:20px;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border:1px solid #ccc;
+    padding:8px;
+}
+
+#contact p{
+    margin: 10px 0;
+    color: beige;
+}
+#contact a{
+    color: #93c5fd;
+    text-decoration: none;
+    margin-right: 10px;
+}
+#contact {
+    background: #23364e;
+    color: #93c5fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+}
+#apropos h2, #competences h2, #formation h2, #contact h2{
+    color:#ffffff;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 0PX;
+    margin-left: -5PX;
+    border-radius: 8px;
+    background-color: #1e3a5f;
+}
+</style>
   </head>
   <body>
     <header>
-      <h1>En-tête du site</h1>
+      <div class="cvimg">
+          <img src="img/photo.jpg" alt="Photo de moi" class="profile-photo">
+      </div>
+      <div class="name">
+        <h1>Taouchikht lhoussin</h1>
+        <p>Etudiant en informatique</p>
+      </div>
     </header>
-
     <nav>
-      <a href="/">Accueil</a>
-      <a href="/about">À propos</a>
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#formation" >Formation</a>
+      <a href="#contact" >Contact</a>
     </nav>
 
     <main>
-      <h2>Contenu principal</h2>
-      <p>Votre contenu ici...</p>
+      <section id="apropos">
+        <h2>À propos de moi</h2>
+        <p>Je suis un étudiant en informatique passionné par le développement web et les nouvelles technologies. J'aime apprendre de nouvelles compétences et relever des défis techniques.</p>
+      </section>
+
+      <section id="competences">
+        <h2>Compétences</h2>
+        <ul>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Git</li>
+        </ul>
+      </section>
+
+      <section id="formation">
+        <h2>Formation</h2>
+        <table>
+<tr>
+<th>Période</th>
+<th>Diplôme</th>
+<th>Établissement</th>
+</tr>
+<tr>
+<td>2025 Présent</td>
+<td>Ing: Génie du Logiciel et Systèmes Informatiques Distribués</td>
+<td>enset</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>MCW multimidia et conciption Web</td>
+<td>BTS</td>
+</tr>
+
+<tr>
+<td>2022</td>
+<td>Baccalauréat</td>
+<td>Lycée</td>
+</tr>
+
+</table>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email : lhoussin.taouchikht@gmail.com</p>
+        <p>Téléphone : +212 6 00 00 00 00</p>
+        <p>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> |
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+      </section>
     </main>
+    </header>
 
     <footer>
       <p>© 2024 Mon Site</p>
