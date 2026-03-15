@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaBuild – Contact</title>
+    <meta name="description" content="Contactez NovaBuild pour votre projet web à Casablanca.">
+    <meta property="og:title" content="NovaBuild – Contact">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+<header>
+    <div class="nav-inner">
+        <a href="../index.html" class="logo"><img src="../img/logo.png" alt="NovaBuild" width="100" height="50"></a>
+        <nav aria-label="Navigation principale">
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+
+    <section>
+        <h1>Contactez-nous</h1>
+        <div class="contact-grid">
+
+            <div class="contact-form">
+                <h2>Formulaire</h2>
+                <form action="#" method="post" novalidate>
+
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" name="nom" required placeholder="Votre nom" autocomplete="name">
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="votre@email.com" autocomplete="email">
+
+                    <label for="tel">Téléphone</label>
+                    <input type="tel" id="tel" name="telephone"
+                           pattern="^(?:\+212|0)[5-7]\d{8}$"
+                           placeholder="0600000000" autocomplete="tel">
+
+                    <label for="sujet">Sujet *</label>
+                    <select id="sujet" name="sujet" required>
+                        <option value="" disabled selected>Choisissez...</option>
+                        <option value="devis">Demande de devis</option>
+                        <option value="question">Question générale</option>
+                        <option value="partenariat">Partenariat</option>
+                    </select>
+
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Décrivez votre projet..."></textarea>
+
+                    <button type="submit">Envoyer le message</button>
+                </form>
+            </div>
+
+            <div class="contact-infos">
+                <h2>Nos coordonnées</h2>
+                <p>📍 12 Rue des Orangers<br>Casablanca 20000, Maroc</p>
+                <p>📧 <a href="mailto:hello@novabuild.ma">hello@novabuild.ma</a></p>
+                <p>📞 <a href="tel:+212522000000">+212 5 22 00 00 00</a></p>
+                <p>🕐 Lun–Ven : 9h–18h</p>
+
+                <div class="map-wrapper">
+                    <iframe
+                        title="Localisation NovaBuild – Casablanca"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-7.62%2C33.55%2C-7.57%2C33.60&layer=mapnik&marker=33.5731%2C-7.5898"
+                        allowfullscreen loading="lazy"
+                        aria-label="Carte Casablanca, Maroc">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <strong style="color:white;">NovaBuild</strong>
+            <p style="font-size:13px;margin-top:5px;">Agence web · Casablanca, Maroc</p>
+        </div>
+        <div>
+            <h4>Plan du site</h4>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Légal</h4>
+            <ul>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Confidentialité</a></li>
+                <li><a href="#">CGU</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="footer-copy">© 2024 NovaBuild – Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
